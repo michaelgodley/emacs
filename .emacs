@@ -72,6 +72,13 @@
 (setq web-mode-enable-comment-keywords t)
 (setq-default tab-width 2)
 
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+;; (add-hook 'yaml-mode-hook
+;;  '(lambda()
+;;     (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+
 ;; Prettier
 ;; (require 'prettier-js)
 ;; (add-hook 'web-mode-hook 'prettier-js-mode)
@@ -115,7 +122,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (json-mode web-mode))))
+ '(package-selected-packages (quote (yaml-mode json-mode web-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

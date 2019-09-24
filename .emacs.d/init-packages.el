@@ -13,7 +13,7 @@
 
 ; list the packages you want
 ; (setq package-list '(paren web-mode flycheck json-mode exec-path-from-shell prettier-js))
-(setq package-list '(paren web-mode json-mode))
+(setq package-list '(paren web-mode json-mode yaml-mode))
 
 ; Activate all the packages
 (package-initialize)
